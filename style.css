@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #2a2a2a, #0f0f0f);
+    color: #f6f6f6;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+}
+
+#hud {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#message {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#message h1 {
+    margin: 0 0 6px;
+    color: #ff5f5f;
+}
+
+#message p {
+    margin: 0;
+    color: #f3f3f3;
+}
+
+.hidden {
+    display: none !important;
+}
