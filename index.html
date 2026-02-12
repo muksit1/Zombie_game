@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Health: <span id="health">100</span></div>
+            <div>Wave: <span id="wave">1</span></div>
+        </div>
+        <div id="message" class="hidden">
+            <h1>Game Over</h1>
+            <p>Press R to restart</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
